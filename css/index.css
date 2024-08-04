@@ -1,5 +1,6 @@
 /*--header--*/
 header{
+  background-color: aliceblue;
   box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.6);
   left: 0;
   position: fixed;
@@ -66,4 +67,9 @@ header{
 /*--main-container--*/
 .main-container{
   margin-top:12vh;
+}
+
+.main-banner {
+  width: 100%;
+  height: auto;
 }
