@@ -1,7 +1,11 @@
+body {
+  background-color: var(--main-white);
+}
+
 /*--header--*/
-header{
+header {
   background-color: aliceblue;
-  box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.6);
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.6);
   left: 0;
   position: fixed;
   right: 0;
@@ -10,25 +14,25 @@ header{
   z-index: 10
 }
 
-.header-main-container{
+.header-main-container {
   display: flex;
   align-items: center; /* Выравнивание по вертикали */
   justify-content: space-between; /* Выравнивание по горизонтали */
 }
 
-.header-svg svg{
+.header-svg svg {
   padding: 1vh 4vw;
   width: auto;
   height: 10vh;
 }
 
-.header-sections{
+.header-sections {
   width: 65%;
   margin-right: 10vw;
   font-size: 1.5vw;
 }
 
-.header-sections nav ul{
+.header-sections nav ul {
   margin: 0;
   list-style-type: none;
   display: flex;
@@ -36,13 +40,13 @@ header{
   justify-content: space-between;
 }
 
-.header-sections a{
+.header-sections a {
   color: inherit;
   text-decoration: none;
   position: relative;
 }
 
-.header-sections nav ul li a:hover{
+.header-sections nav ul li a:hover {
   color: var(--main-color);
 }
 
@@ -59,17 +63,128 @@ header{
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
+
 .header-sections nav ul li a:hover::after {
   transform: scaleX(1);
 }
 
 
 /*--main-container--*/
-.main-container{
-  margin-top:12vh;
+.main-container {
+  margin-top: 12vh;
 }
 
+/*main-banner*/
 .main-banner {
   width: 100%;
   height: auto;
+}
+
+
+/*thought*/
+
+.container-thought {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5vw;
+}
+
+.container-thought .thought {
+  width: 50vw;
+  color: var(--main-color);
+  margin: 0;
+  font-size: 2vw;
+}
+
+.container-thought .text {
+  margin: 0;
+  font-size: 1.5vw;
+}
+
+/*philosophy*/
+.container-principal-philosophy {
+  border: 2px solid black;
+  margin: 3vw;
+}
+
+.container-principal-philosophy .header-principal-philosophy {
+  font-size: 1.3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-principal-philosophy ul {
+  list-style-type: none;
+  font-size: 1.2vw;
+}
+
+.container-principal-philosophy ul li {
+  display: flex;
+  align-items: center;
+  margin: 0.5vw 0;
+}
+
+.container-principal-philosophy .icon-item::before {
+  align-items: center;
+  display: inline-block;
+  margin-right: 1.5vw;
+  width: 3vw;
+  height: 3vw;
+}
+
+.icon-item:nth-child(1)::before {
+  content: url('../img/svg/cycle.svg');
+  animation: spin 3s infinite linear;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.icon-item:nth-child(2)::before {
+  content: url('../img/svg/ecology.svg');
+  animation: scaleUpDown  4s ease-in-out infinite;
+  width: 6vw;
+  height: 6vw;
+  margin-top: 2vw;
+}
+@keyframes scaleUpDown  {
+  0%, 100% {
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.icon-item:nth-child(3)::before {
+  content: url('../img/svg/Collaborate.svg');
+  animation: mirror 2s alternate infinite;
+}
+@keyframes mirror {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(-1);
+  }
+}
+
+.container-principal-philosophy .philosophy-additional{
+  margin-top: 3vw;
+  text-align: center;
+  font-size: 1.4vw;
+  font-style: italic;
+
+}
+
+/*container-invite*/
+.container-invite{
+  font-size: 2vw;
 }
