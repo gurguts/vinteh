@@ -75,10 +75,15 @@ header {
 }
 
 .step-header{
-  font-size: 1.5vw;
   display: flex;
+  font-size: 1.5vw;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.step-header img{
+  width: 30vw;
 }
 
 .step{
