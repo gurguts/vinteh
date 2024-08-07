@@ -138,6 +138,7 @@ header {
   content: url('../img/svg/cycle.svg');
   animation: spin 3s infinite linear;
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -149,12 +150,13 @@ header {
 
 .icon-item:nth-child(2)::before {
   content: url('../img/svg/ecology.svg');
-  animation: scaleUpDown  4s ease-in-out infinite;
+  animation: scaleUpDown 4s ease-in-out infinite;
   width: 6vw;
   height: 6vw;
   margin-top: 2vw;
 }
-@keyframes scaleUpDown  {
+
+@keyframes scaleUpDown {
   0%, 100% {
     transform: scale(0.3);
   }
@@ -167,6 +169,7 @@ header {
   content: url('../img/svg/Collaborate.svg');
   animation: mirror 2s alternate infinite;
 }
+
 @keyframes mirror {
   0% {
     transform: scaleX(1);
@@ -176,7 +179,7 @@ header {
   }
 }
 
-.container-principal-philosophy .philosophy-additional{
+.container-principal-philosophy .philosophy-additional {
   margin-top: 3vw;
   text-align: center;
   font-size: 1.4vw;
@@ -185,6 +188,49 @@ header {
 }
 
 /*container-invite*/
-.container-invite{
-  font-size: 2vw;
+.container-invite {
+  font-size: 1.6vw;
+  margin: 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-invite .text {
+  text-indent: 3vw;
+  padding-right:3vw;
+  width: 70vw;
+  position: relative;
+}
+
+.container-invite .text p{
+}
+
+.container-invite .text::before {
+  content: "";
+  display: block;
+  width: 0.3vw;
+  height: 100%;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.container-invite .links {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-invite .links a {
+  color: inherit;
+}
+
+.container-invite .links img {
+  margin-top: 1vw;
+  width: 15vw;
 }
