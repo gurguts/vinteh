@@ -6,14 +6,15 @@
 
   <title>New life oil</title>
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/oil.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/oil.css">
+  <link rel="stylesheet" href="../css/common.css">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
 
-  <link rel="manifest" href="site.webmanifest">
+  <link rel="manifest" href="../site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
@@ -65,9 +66,32 @@
     <div class="header-sections">
       <nav>
         <ul>
-          <li><a href="index.html">Наша філософія</a></li>
-          <li><a href="oil.html">Нове життя олії</a></li>
-          <li><a href="#">Звернутись до нас</a></li>
+          <li><a href="index.html">Our philosophy</a></li>
+          <li><a href="oil.html">New life of the oil</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li>
+            <div class="language-selector">
+              <a href="#" class="language-icon" onclick="toggleLanguageMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                  <g fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                    <path d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20"
+                          clip-rule="evenodd"/>
+                    <path d="M4 24h40"/>
+                    <path d="M24 44c4.418 0 8-8.954 8-20S28.418 4 24 4s-8 8.954-8 20s3.582 20 8 20"
+                          clip-rule="evenodd"/>
+                    <path
+                      d="M9.858 10.142A19.94 19.94 0 0 0 24 16a19.94 19.94 0 0 0 14.142-5.858m0 27.716A19.94 19.94 0 0 0 24 32a19.94 19.94 0 0 0-14.142 5.858"/>
+                  </g>
+                </svg>
+              </a>
+              <div class="dropdown-menu">
+                <a href="/ua" class="no-underline">Українська</a>
+                <a href="/en" class="no-underline">English</a>
+                <a href="/dt" class="no-underline">Deutsch</a>
+                <a href="/pl" class="no-underline">Polski</a>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav>
     </div>
@@ -80,60 +104,110 @@
   <div class="steps-container">
 
     <div class="step-header">
-      <img src="img/header_oil.png">
+      <img src="../img/header_oil.png">
       <h1>
-        Від відходів до біодизелю
+        From waste to biodiesel
       </h1>
     </div>
     <div class="step">
       <div class="img">
-        <img src="img/used_oil.png">
+        <img src="../img/used_oil.png">
       </div>
 
       <div class="text">
-        <h3>Перший етап</h3>
-        <p>У наш час використання соняшникової олії для приготування їжі є звичайною справою. Але ніхто не замислюється
-          над
-          тим, яку шкоду вона зазнає, якщо правильно не утилізувати. Що вже казати про те, хто його просто зливає!</p>
+        <h3>The first stage</h3>
+        <p>Nowadays, using sunflower oil for cooking is commonplace. But no one thinks about the damage it causes if it
+          is not properly disposed of. What can we say about those who simply dump it!</p>
 
-        <p>Не викидайте використане кулінарне масло! Натомість продайте його нам і перетворите відходи на доходи. Таким
-          чином,
-          Ви збережете екологію, що вже є вагомим аргументом у наш час, так ще й до того ж, ви отримаєте додатковий
-          дохід.</p>
+        <p>Don't throw away your used cooking oil! Instead, sell it to us and turn waste into income. This way, You will
+          save the environment, which is already a strong argument in our time, and you will also receive additional
+          income.</p>
       </div>
     </div>
     <div class="step">
       <div class="text">
-        <h3>Другий етап</h3>
-        <p>Зібране використане харчове масло проходить перевірку у виробничій лабораторії, потім прямує на відстійники,
-          де воно змішується і фільтрується для видалення забруднень.</p>
-        <p>Після цієї першої стадії очищення масло піддається
-          етерифікації другого етапу виробництва, де відбуваються відповідні хімічні реакції. Ключовий момент у
-          виробництві біодизеля – це повне перетворення жирів на біодизель.
-        <p>Наприкінці процесу вироблений біодизель
-          проходить суворий контроль якості.</p>
+        <h3>The second stage</h3>
+        <p>The collected used cooking oil is tested in the production laboratory and then sent to the sedimentation
+          tanks, where it is mixed and filtered to remove contaminants.</p>
+        <p>After this first stage of purification, the oil is subjected to esterification of the second stage of
+          production, where the corresponding chemical reactions take place. The key point in biodiesel production is
+          the complete conversion of fats into biodiesel.
+        <p>At the end of the process, the biodiesel produced undergoes strict quality control.</p>
       </div>
-      <div class="img"><img src="img/produce_oil.png"></div>
+      <div class="img"><img src="../img/produce_oil.png"></div>
     </div>
     <div class="step">
-      <div class="img"><img src="img/bio_disel.png"></div>
+      <div class="img"><img src="../img/bio_disel.png"></div>
       <div class="text">
-        <h3>Третій етап</h3>
-        <p>Біодизель виробляється з рослинних олій, що робить його екологічно безпечнішим у порівнянні зі звичайним
-          дизельним паливом. Він має менший вміст сірки та інших шкідливих речовин.</p>
+        <h3>The third stage</h3>
+        <p>Biodiesel is produced from vegetable oils, which makes it more environmentally friendly than conventional
+          diesel fuel. It has a lower content of sulfur and other harmful substances.</p>
 
-        <p>Використання біодизеля сприяє зниженню викидів CO2 та інших парникових газів, оскільки він є біорозкладним і
-          виробляється з відновлюваних джерел.</p>
+        <p>The use of biodiesel contributes to the reduction of CO2 and other greenhouse gas emissions, as it is
+          biodegradable and produced from renewable sources.</p>
 
-        <p>Виробництво біодизеля сприяє розвитку сільського господарства, так як для його виробництва використовуються
-          рослинні олії, такі як ріпакова або соєва.</p>
-        <p>Біодизель має кращі змащувальні властивості, що може продовжити термін служби двигуна.</p>
-<!--
-        <p>Використання біодизеля допомагає урізноманітнити джерела енергії та зменшити залежність від
-          нафтопродуктів.</p>-->
+        <p>The production of biodiesel contributes to the development of agriculture, as it is produced using vegetable
+          oils, such as rapeseed or soybean.</p>
+        <p>Biodiesel has better lubricating properties, which can extend engine life.</p>
       </div>
     </div>
   </div>
 </div>
+
+
+<!--pen-container-->
+<div class="pen-container">
+  <a href="#" id="pen-link">
+    <img src="../img/svg/pen.svg" alt="Звернутись">
+    <span class="hover-text">Contact</span>
+  </a>
+</div>
+
+<div id="modal-pen" class="modal-pen">
+  <div class="modal-content-pen">
+    <span class="close-button-pen">&times;</span>
+    <h2>We are available everywhere:</h2>
+
+    <div class="qr-phone">
+      <a href="tel:+380937107683">
+        <img class="phone" src="../img/svg/line-md--phone-call-loop.svg" alt="Phone">
+        <span>+380937107683</span>
+      </a>
+
+      <a href="https://t.me/ucouabot">
+        <img class="qr" src="../img/qr_pen.png" alt="Telegram-bot">
+        <span>@ucouabot</span>
+      </a>
+    </div>
+
+    <div class="contacts">
+      <div class="contact-item">
+        <a href="" target="_blank">
+          <img src="../img/svg/skill-icons--instagram.svg" alt="Instagram">
+          <span>@oil_ua</span>
+        </a>
+      </div>
+      <div class="contact-item">
+        <a href="https://t.me/vintehua" target="_blank">
+          <img src="../img/svg/logos--telegram.svg" alt="Telegram">
+          <span>@vintehua</span>
+        </a>
+      </div>
+      <div class="contact-item">
+        <a href="https://wa.link/en0lrl" target="_blank">
+          <img src="../img/svg/logos--whatsapp-icon.svg" alt="Whatsapp">
+          <span>+380937107683</span>
+        </a>
+      </div>
+      <div class="contact-item">
+        <a href="viber://chat/?number=%2B380937107683" target="_blank">
+          <img class="contact-item-viber" src="../img/svg/basil--viber-outline.svg" alt="Viber">
+          <span>+380937107683</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../js/pen.js"></script>
 </body>
 </html>
